@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaxrentaldeals — Jacksonville Rentals</title>
+  <meta name="description" content="Find your next rental in Jacksonville, FL. Browse vetted listings across Riverside, San Marco, Neptune Beach, and more.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">jax<em>rental</em>deals</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">List your property</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="index.html" class="active">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta btn btn-primary">List your property</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="eyebrow eyebrow-light">Jacksonville, FL · Rental Listings</div>
+    <h1 class="hero-title">Find your<br><em>next place</em><br>in Jax.</h1>
+    <p class="hero-sub">Hundreds of vetted rentals across Jacksonville's best neighborhoods — no bots, no ghost listings, just real homes from real people.</p>
+
+    <form class="searchbar" style="max-width:640px;" onsubmit="return false;">
+      <input type="text" placeholder="Neighborhood, zip, or street…" aria-label="Search rentals">
+      <select aria-label="Bedrooms">
+        <option value="">Any beds</option>
+        <option value="studio">Studio</option>
+        <option value="1">1 bed</option>
+        <option value="2">2 beds</option>
+        <option value="3">3+ beds</option>
+      </select>
+      <button type="submit" class="btn btn-primary btn-sm">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- STATS -->
+<div style="background:var(--paper); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num">347</div>
+        <div class="stat-label">Active listings right now</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Neighborhoods covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">$1,420</div>
+        <div class="stat-label">Avg. rent this month</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">98%</div>
+        <div class="stat-label">Listings are verified</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LISTINGS -->
+<section style="background:var(--shell);">
+  <div class="container">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:var(--s-4); margin-bottom:var(--s-6);">
+      <div>
+        <div class="eyebrow">Active listings</div>
+        <h2 class="section-title" style="margin-bottom:0;">What's available <em style="font-style:italic; color:var(--coral);">now.</em></h2>
+      </div>
+      <a href="properties.html" class="btn btn-ghost btn-sm">See all properties →</a>
+    </div>
+
+    <!-- FILTER PILLS -->
+    <div style="display:flex; gap:var(--s-2); flex-wrap:wrap; margin-bottom:var(--s-5);">
+      <button class="neighborhood-pill active" data-filter="all">All neighborhoods</button>
+      <button class="neighborhood-pill" data-filter="Riverside">Riverside</button>
+      <button class="neighborhood-pill" data-filter="San Marco">San Marco</button>
+      <button class="neighborhood-pill" data-filter="Neptune Beach">Neptune Beach</button>
+      <button class="neighborhood-pill" data-filter="Downtown">Downtown</button>
+      <button class="neighborhood-pill" data-filter="Avondale">Avondale</button>
+      <button class="neighborhood-pill" data-filter="Springfield">Springfield</button>
+    </div>
+
+    <!-- GRID -->
+    <div class="listings-grid">
+
+      <!-- 1 -->
+      <div class="prop-card" data-neighborhood="Riverside">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxriv1/800/500" alt="2BR in Riverside" loading="lazy">
+          <div class="prop-image-badge badge badge-available">
+            <span class="badge-dot"></span>Available
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Riverside</div>
+          <div class="prop-price">$1,450<span>/mo</span></div>
+          <div class="prop-address">2814 Park St, Riverside</div>
+          <div class="prop-specs">
+            <div><strong>2</strong> beds</div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>950</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="prop-card" data-neighborhood="Neptune Beach">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxnep2/800/500" alt="3BR in Neptune Beach" loading="lazy">
+          <div class="prop-image-badge badge badge-hot">
+            <span class="badge-dot"></span>Hot Deal
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Neptune Beach</div>
+          <div class="prop-price">$2,100<span>/mo</span></div>
+          <div class="prop-address">1102 Atlantic Blvd, Neptune Beach</div>
+          <div class="prop-specs">
+            <div><strong>3</strong> beds</div>
+            <div><strong>2</strong> baths</div>
+            <div><strong>1,380</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="prop-card" data-neighborhood="Downtown">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxdwn3/800/500" alt="1BR Downtown" loading="lazy">
+          <div class="prop-image-badge badge badge-new">
+            <span class="badge-dot"></span>Just Listed
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Downtown</div>
+          <div class="prop-price">$1,750<span>/mo</span></div>
+          <div class="prop-address">340 E Bay St, Downtown</div>
+          <div class="prop-specs">
+            <div><strong>1</strong> bed</div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>720</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="prop-card" data-neighborhood="San Marco">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxsm4/800/500" alt="2BR San Marco" loading="lazy">
+          <div class="prop-image-badge badge badge-available">
+            <span class="badge-dot"></span>Available
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">San Marco</div>
+          <div class="prop-price">$1,625<span>/mo</span></div>
+          <div class="prop-address">1845 Hendricks Ave, San Marco</div>
+          <div class="prop-specs">
+            <div><strong>2</strong> beds</div>
+            <div><strong>2</strong> baths</div>
+            <div><strong>1,100</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="prop-card" data-neighborhood="Avondale">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxavo5/800/500" alt="Studio Avondale" loading="lazy">
+          <div class="prop-image-badge badge badge-hot">
+            <span class="badge-dot"></span>Hot Deal
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Avondale</div>
+          <div class="prop-price">$975<span>/mo</span></div>
+          <div class="prop-address">3601 St Johns Ave, Avondale</div>
+          <div class="prop-specs">
+            <div><strong>Studio</strong></div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>520</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="prop-card" data-neighborhood="Springfield">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxspf6/800/500" alt="3BR Springfield" loading="lazy">
+          <div class="prop-image-badge badge badge-new">
+            <span class="badge-dot"></span>Just Listed
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Springfield</div>
+          <div class="prop-price">$1,295<span>/mo</span></div>
+          <div class="prop-address">522 N Market St, Springfield</div>
+          <div class="prop-specs">
+            <div><strong>3</strong> beds</div>
+            <div><strong>2</strong> baths</div>
+            <div><strong>1,420</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="prop-card" data-neighborhood="Murray Hill">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxmur7/800/500" alt="2BR Murray Hill" loading="lazy">
+          <div class="prop-image-badge badge badge-available">
+            <span class="badge-dot"></span>Available
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Murray Hill</div>
+          <div class="prop-price">$1,195<span>/mo</span></div>
+          <div class="prop-address">4012 Edgewood Ave, Murray Hill</div>
+          <div class="prop-specs">
+            <div><strong>2</strong> beds</div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>880</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="prop-card" data-neighborhood="Atlantic Beach">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxatl8/800/500" alt="4BR Atlantic Beach" loading="lazy">
+          <div class="prop-image-badge badge badge-hot">
+            <span class="badge-dot"></span>Hot Deal
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Atlantic Beach</div>
+          <div class="prop-price">$2,800<span>/mo</span></div>
+          <div class="prop-address">218 Seminole Rd, Atlantic Beach</div>
+          <div class="prop-specs">
+            <div><strong>4</strong> beds</div>
+            <div><strong>3</strong> baths</div>
+            <div><strong>2,100</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="prop-card" data-neighborhood="Mandarin">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxman9/800/500" alt="3BR Mandarin" loading="lazy">
+          <div class="prop-image-badge badge badge-available">
+            <span class="badge-dot"></span>Available
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Mandarin</div>
+          <div class="prop-price">$1,850<span>/mo</span></div>
+          <div class="prop-address">11290 Old St Augustine Rd, Mandarin</div>
+          <div class="prop-specs">
+            <div><strong>3</strong> beds</div>
+            <div><strong>2</strong> baths</div>
+            <div><strong>1,560</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="prop-card" data-neighborhood="Ortega">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxort10/800/500" alt="2BR Ortega" loading="lazy">
+          <div class="prop-image-badge badge badge-new">
+            <span class="badge-dot"></span>Just Listed
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Ortega</div>
+          <div class="prop-price">$1,975<span>/mo</span></div>
+          <div class="prop-address">4820 Ortega Blvd, Ortega</div>
+          <div class="prop-specs">
+            <div><strong>2</strong> beds</div>
+            <div><strong>2</strong> baths</div>
+            <div><strong>1,040</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="prop-card" data-neighborhood="Arlington">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxarl11/800/500" alt="1BR Arlington" loading="lazy">
+          <div class="prop-image-badge badge badge-available">
+            <span class="badge-dot"></span>Available
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Arlington</div>
+          <div class="prop-price">$995<span>/mo</span></div>
+          <div class="prop-address">6204 Arlington Rd, Arlington</div>
+          <div class="prop-specs">
+            <div><strong>1</strong> bed</div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>660</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="prop-card" data-neighborhood="Northbank">
+        <div class="prop-image">
+          <img src="https://picsum.photos/seed/jaxnbk12/800/500" alt="2BR Northbank" loading="lazy">
+          <div class="prop-image-badge badge badge-hot">
+            <span class="badge-dot"></span>Hot Deal
+          </div>
+          <button class="prop-fav" aria-label="Save">♡</button>
+        </div>
+        <div class="prop-body">
+          <div class="prop-neighborhood">Northbank</div>
+          <div class="prop-price">$1,550<span>/mo</span></div>
+          <div class="prop-address">255 Water St, Northbank</div>
+          <div class="prop-specs">
+            <div><strong>2</strong> beds</div>
+            <div><strong>1</strong> bath</div>
+            <div><strong>890</strong> sqft</div>
+          </div>
+          <div class="prop-action">
+            <a href="properties.html" class="btn btn-ghost btn-sm" style="width:100%;justify-content:center;">View details →</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /listings-grid -->
+
+    <div style="text-align:center; margin-top:var(--s-7);">
+      <a href="properties.html" class="btn btn-primary">Browse all properties →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="dark-section">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:var(--s-6);">
+    <div>
+      <div class="eyebrow">For landlords &amp; property managers</div>
+      <h2 class="section-title" style="color:white; max-width:520px;">Got a place to rent? Put it in front of Jacksonville renters — <em style="color:var(--sunshine);">today.</em></h2>
+      <p style="color:rgba(255,255,255,.65); font-size:16px; max-width:460px;">Listing is free. No brokerage fees. Your property, your terms. We just connect you with the right tenant.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:var(--s-3);">
+      <a href="contact.html" class="btn btn-primary">List your property</a>
+      <a href="about.html" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,.3);">Learn how it works</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">jax<em>rental</em>deals</div>
+        <p>Jacksonville's friendliest rental marketplace. Real homes, real neighbors, real prices — no bot listings, no hidden fees.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Neighborhoods</h4>
+        <a href="properties.html">Riverside</a>
+        <a href="properties.html">San Marco</a>
+        <a href="properties.html">Neptune Beach</a>
+        <a href="properties.html">Downtown</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <p>hello@jaxrentaldeals.com<br>(904) 555-0147<br>Jacksonville, FL 32202</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 jaxrentaldeals. All rights reserved.</p>
+      <p>Made with ♥ in Jacksonville, FL</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

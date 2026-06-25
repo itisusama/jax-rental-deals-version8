@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — jaxrentaldeals</title>
+  <meta name="description" content="Reach out to jaxrentaldeals — list a property, ask about a listing, or just say hello.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">jax<em>rental</em>deals</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">List your property</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="nav-cta btn btn-primary">List your property</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="eyebrow eyebrow-light">Contact us</div>
+    <h1>We actually<br><em>pick up the phone.</em></h1>
+    <p>Questions about a listing, want to add your property, or just need to talk to a real human — we're here.</p>
+  </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<section style="background:var(--shell);">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="form-card">
+        <div class="eyebrow" style="margin-bottom:var(--s-3);">Send us a message</div>
+        <h2 style="font-family:var(--font-display); font-weight:700; font-size:28px; color:var(--ink); margin-bottom:var(--s-5); letter-spacing:-0.02em;">We'll reply within one business day.</h2>
+
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Your name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Maya Deleon" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(904) 555-0100">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">What's this about?</label>
+            <select class="form-input" id="subject" name="subject" style="cursor:pointer;">
+              <option value="">Select a topic…</option>
+              <option value="renter">I'm looking for a rental</option>
+              <option value="landlord">I want to list my property</option>
+              <option value="listing">Question about a specific listing</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Your message</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what you're looking for — neighborhood, budget, move-in date, pets, whatever's relevant. The more detail the better." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:16px;">Send message</button>
+
+          <p style="font-size:13px; color:var(--mist); margin-top:var(--s-3); text-align:center;">No spam, ever. We only use your info to respond to your inquiry.</p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div>
+
+        <div class="contact-info-card">
+          <h3>Find us</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong style="display:block; color:var(--ink); margin-bottom:2px;">Office</strong>
+              1021 Park St, Suite 4<br>
+              Jacksonville, FL 32204<br>
+              <span style="font-size:13px; color:var(--mist);">Riverside — walk-ins welcome Tue–Fri 10am–4pm</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong style="display:block; color:var(--ink); margin-bottom:2px;">Phone</strong>
+              <a href="tel:9045550147" style="color:var(--coral); font-weight:600;">(904) 555-0147</a><br>
+              <span style="font-size:13px; color:var(--mist);">Mon–Fri 9am–6pm · Sat 10am–2pm</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong style="display:block; color:var(--ink); margin-bottom:2px;">Email</strong>
+              <a href="mailto:hello@jaxrentaldeals.com" style="color:var(--coral); font-weight:600;">hello@jaxrentaldeals.com</a><br>
+              <span style="font-size:13px; color:var(--mist);">Replies within one business day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP PLACEHOLDER -->
+        <div class="map-placeholder">
+          <div class="map-placeholder-icon">🗺️</div>
+          <div>
+            <strong style="display:block; color:var(--slate); margin-bottom:4px;">1021 Park St, Suite 4</strong>
+            <span>Riverside, Jacksonville FL 32204</span>
+          </div>
+          <a href="https://maps.google.com/?q=1021+Park+St+Jacksonville+FL" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:var(--s-2);">Open in Google Maps ↗</a>
+        </div>
+
+        <!-- QUICK TIPS -->
+        <div style="background:var(--sunshine-soft); border-radius:var(--r-lg); padding:var(--s-5); margin-top:var(--s-4); border:1px solid rgba(255,200,61,.2);">
+          <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:#8A6900; margin-bottom:var(--s-3);">Heads up</div>
+          <p style="font-size:14px; color:var(--slate); line-height:1.6;">For the fastest response, include your target neighborhood, max monthly budget, and your preferred move-in window in your message. It cuts at least one back-and-forth out of the conversation.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ BAND -->
+<section style="background:var(--paper);">
+  <div class="container">
+    <div class="eyebrow">Common questions</div>
+    <h2 class="section-title">Stuff people ask us all the time.</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:var(--s-5); margin-top:var(--s-6);">
+
+      <div style="background:var(--shell); border-radius:var(--r-lg); padding:var(--s-5);">
+        <h3 style="font-family:var(--font-display); font-weight:700; font-size:18px; color:var(--ink); margin-bottom:var(--s-3);">Is it free to search listings?</h3>
+        <p style="font-size:15px; color:var(--slate); line-height:1.6;">Completely free. No sign-up required to browse. We don't charge renters anything, ever — not for applications, not for introductions, not for anything.</p>
+      </div>
+
+      <div style="background:var(--shell); border-radius:var(--r-lg); padding:var(--s-5);">
+        <h3 style="font-family:var(--font-display); font-weight:700; font-size:18px; color:var(--ink); margin-bottom:var(--s-3);">How do I list my property?</h3>
+        <p style="font-size:15px; color:var(--slate); line-height:1.6;">Send us a message with the address, rent price, and a few photos. We'll verify the listing, write up a description, and have it live within 48 hours. Also free.</p>
+      </div>
+
+      <div style="background:var(--shell); border-radius:var(--r-lg); padding:var(--s-5);">
+        <h3 style="font-family:var(--font-display); font-weight:700; font-size:18px; color:var(--ink); margin-bottom:var(--s-3);">Are the listings verified?</h3>
+        <p style="font-size:15px; color:var(--slate); line-height:1.6;">Yes — 98% of active listings have been confirmed by our team within the last 30 days. We call landlords, check photos, and pull public records before anything goes live.</p>
+      </div>
+
+      <div style="background:var(--shell); border-radius:var(--r-lg); padding:var(--s-5);">
+        <h3 style="font-family:var(--font-display); font-weight:700; font-size:18px; color:var(--ink); margin-bottom:var(--s-3);">What neighborhoods do you cover?</h3>
+        <p style="font-size:15px; color:var(--slate); line-height:1.6;">Riverside, Avondale, San Marco, Springfield, Northbank, Downtown, Neptune Beach, Atlantic Beach, Mandarin, Murray Hill, Ortega, and Arlington — and growing.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">jax<em>rental</em>deals</div>
+        <p>Jacksonville's friendliest rental marketplace. Real homes, real neighbors, real prices — no bot listings, no hidden fees.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Neighborhoods</h4>
+        <a href="properties.html">Riverside</a>
+        <a href="properties.html">San Marco</a>
+        <a href="properties.html">Neptune Beach</a>
+        <a href="properties.html">Downtown</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <p>hello@jaxrentaldeals.com<br>(904) 555-0147<br>Jacksonville, FL 32202</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 jaxrentaldeals. All rights reserved.</p>
+      <p>Made with ♥ in Jacksonville, FL</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
